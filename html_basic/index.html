@@ -112,6 +112,59 @@
             border-radius: 10px;
         }
         
+        /* Table Styles */
+        .learners-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .learners-table thead tr {
+            background-color: #2575fc;
+            color: white;
+            text-align: left;
+        }
+        
+        .learners-table th,
+        .learners-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .learners-table tbody tr {
+            transition: background-color 0.2s;
+        }
+        
+        .learners-table tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .learners-table tbody tr:last-of-type {
+            border-bottom: 2px solid #2575fc;
+        }
+        
+        .learners-table tbody tr:hover {
+            background-color: #e9ecef;
+        }
+        
+        .table-container {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .table-title {
+            text-align: center;
+            color: #2575fc;
+            margin-bottom: 20px;
+        }
+        
         @media (max-width: 768px) {
             main {
                 flex-direction: column;
@@ -124,6 +177,15 @@
             
             nav li {
                 margin: 5px 0;
+            }
+            
+            .learners-table {
+                font-size: 0.9rem;
+            }
+            
+            .learners-table th,
+            .learners-table td {
+                padding: 8px 10px;
             }
         }
     </style>
@@ -156,6 +218,42 @@
             <a href="https://www.alxafrica.com/" target="_blank">
                 <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" class="clickable-image">
             </a>
+            
+            <!-- Learners Table Container -->
+            <div class="table-container">
+                <h3 class="table-title">Our Learners</h3>
+                <table class="learners-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
         
         <aside>
@@ -167,12 +265,12 @@
                 <li>Task Management System</li>
                 <li>Portfolio Website</li>
             </ul>
+            <p>placeholder to add comment thread later</p>
         </aside>
     </main>
     
     <footer>
-        <p>© 2023 My Portfolio. All rights reserved.</p>
-        <p>Contact me at: email@example.com</p>
+        <p>Made by Your Name - <a href="https://github.com/yourusername" target="_blank">here</a></p>
     </footer>
 </body>
 </html>
