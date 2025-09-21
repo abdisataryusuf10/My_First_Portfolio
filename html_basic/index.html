@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool First Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #764ba2;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #5a67d8;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .clickable-image {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .clickable-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #667eea;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .clickable-image {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My First Webpage</h1>
+            <h2>A Journey into Web Development</h2>
+        </header>
+        
+        <div class="image-container">
+            <a href="https://www.alxafrica.com" target="_blank">
+                <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" class="clickable-image">
+            </a>
+            <p>Click the image to visit ALX Africa!</p>
+        </div>
+        
+        <h3>Why I'm Learning Web Development</h3>
+        <p>Web development is an incredibly valuable skill in today's digital world. It combines creativity with technical skills, allowing me to build solutions that can be accessed by people all over the world. The journey of learning to code has been challenging but immensely rewarding, as I get to see my ideas come to life in the browser.</p>
+        
+        <h3>The Technologies I'm Exploring</h3>
+        <p>Starting with HTML and CSS, I'm building the foundation of web development. These technologies allow me to structure content and make it visually appealing. Soon, I'll be diving into JavaScript to add interactivity to my websites, followed by backend technologies to create full-stack applications.</p>
+        
+        <h3>My Goals for This Journey</h3>
+        <p>My primary goal is to become proficient in building responsive, accessible, and user-friendly websites. I want to understand not just how to write code, but how to solve real-world problems through technology. Along the way, I hope to contribute to open-source projects and build a portfolio that showcases my skills and growth.</p>
+        
+        <h3>The Future of Web Development</h3>
+        <p>Web development is constantly evolving, with new frameworks, libraries, and best practices emerging regularly. I'm excited to be learning at a time when web technologies are more powerful than ever. The skills I'm building now will serve as a foundation for understanding future advancements in the field.</p>
+        
+        <footer>
+            <p>Created as part of my ALX journey • 2023</p>
+        </footer>
+    </div>
+</body>
+</html>
