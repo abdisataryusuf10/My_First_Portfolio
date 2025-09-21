@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            color: #6a11cb;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: #2575fc;
+            margin: 20px 0 10px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .image-section {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .image-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .clickable-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .clickable-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        
+        .caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <h2>Software Developer & UX Enthusiast</h2>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate software developer with expertise in creating responsive and user-friendly web applications. With over five years of experience in the industry, I've worked on various projects ranging from small business websites to large-scale enterprise applications. I believe in writing clean, maintainable code and always strive to learn new technologies.</p>
+            
+            <h3>My Journey</h3>
+            <p>My journey in web development began during my university studies where I first discovered my passion for coding. Since then, I've dedicated myself to continuous learning and professional growth. I've had the privilege of working with talented teams on challenging projects that have expanded my skill set and shaped my approach to problem-solving.</p>
+            
+            <h3>Technical Skills</h3>
+            <p>I specialize in front-end development with strong skills in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js. On the back-end, I have experience with Node.js, Python, and database management. I'm also proficient with version control systems, particularly Git, and have worked extensively with agile development methodologies.</p>
+            
+            <h3>Philosophy & Approach</h3>
+            <p>I believe that great software is not just about writing code—it's about understanding user needs, solving real problems, and creating enjoyable experiences. I focus on building accessible, performant applications that make a positive impact. Collaboration, communication, and continuous improvement are at the core of my professional philosophy.</p>
+        </div>
+        
+        <div class="image-section">
+            <div class="image-card">
+                <a href="https://www.alxafrica.com/" target="_blank">
+                    <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" class="clickable-image">
+                </a>
+                <p class="caption">Click the image to visit ALX Africa</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
