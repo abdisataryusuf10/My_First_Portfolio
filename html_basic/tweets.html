@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tweets - My First Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f8fa;
+            color: #14171a;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, #1da1f2 0%, #0c85d0 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #1da1f2;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1e8ed;
+        }
+        
+        nav {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #1da1f2;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #1da1f2;
+            color: white;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .tweet-section {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .twitter-embed {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+        
+        .twitter-tweet {
+            margin: 0 auto;
+            max-width: 550px;
+        }
+        
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .info-box h3 {
+            color: #1da1f2;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .info-box p {
+            margin-bottom: 15px;
+            color: #14171a;
+        }
+        
+        .tweet-list {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .tweet-list h3 {
+            color: #1da1f2;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .tweet-item {
+            padding: 15px;
+            border-bottom: 1px solid #e1e8ed;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tweet-item:last-child {
+            border-bottom: none;
+        }
+        
+        .tweet-icon {
+            color: #1da1f2;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        
+        .tweet-content {
+            flex: 1;
+        }
+        
+        .tweet-date {
+            color: #657786;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #e1e8ed;
+            color: #657786;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            nav li {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Tweets</h1>
+        <p>Check out my latest thoughts and updates</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+            <li><a href="#featured">Featured Tweet</a></li>
+            <li><a href="#more">More Tweets</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="tweet-section">
+            <h2 id="featured">Featured Tweet</h2>
+            <div class="twitter-embed">
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">The only way to do great work is to love what you do. If you haven&#39;t found it yet, keep looking. Don&#39;t settle. - Steve Jobs</p>
+                    &mdash; Inspiration Page (@InspirationPage) <a href="https://x.com/A_Satar_Yusuf12">February 8, 2021</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <h2 id="more">More Tweets</h2>
+            <div class="tweet-list">
+                <h3>Recent Thoughts</h3>
+                
+                <div class="tweet-item">
+                    <div class="tweet-icon">🐦</div>
+                    <div class="tweet-content">
+                        <p>Just finished an amazing web development project using HTML, CSS, and JavaScript! The power of front-end development never ceases to amaze me.</p>
+                        <p class="tweet-date">Posted on: October 5, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="tweet-item">
+                    <div class="tweet-icon">🐦</div>
+                    <div class="tweet-content">
+                        <p>Learning new programming languages expands your mind and opens up new possibilities. Currently diving deeper into Python and its data science libraries.</p>
+                        <p class="tweet-date">Posted on: September 28, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="tweet-item">
+                    <div class="tweet-icon">🐦</div>
+                    <div class="tweet-content">
+                        <p>Collaboration and teamwork are essential in software development. The best products are built when diverse minds come together to solve problems.</p>
+                        <p class="tweet-date">Posted on: September 15, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h3>About This Page</h3>
+            <p>This page showcases my thoughts and updates in tweet format. The main tweet is embedded using Twitter's official embedding method.</p>
+            
+            <p>You can embed any tweet by using Twitter's embed code, which you can get by clicking on the "Embed Tweet" option from the tweet's dropdown menu.</p>
+            
+            <p>Feel free to check out my <a href="index.html" style="color: #1da1f2; text-decoration: none; font-weight: 600;">homepage</a> for more information about me and my work.</p>
+            
+            <h3>Why I Use Twitter</h3>
+            <p>Twitter is a great platform for sharing quick thoughts, staying updated with technology trends, and connecting with other developers worldwide.</p>
+            
+            <h3>Connect With Me</h3>
+            <p>Follow me on Twitter for more updates on web development, programming tips, and tech insights!</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 My First Portfolio. This page is part of the HTML Basics project.</p>
+        <p><a href="index.html" style="color: #1da1f2; text-decoration: none;">Return to Homepage</a></p>
+    </footer>
+</body>
+</html>
